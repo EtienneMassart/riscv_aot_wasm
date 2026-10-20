@@ -1,0 +1,14 @@
+[target.riscv32imafd-ifx-none-elf]
+runner = "./simulator.sh"
+
+
+[build]
+target = ["riscv32imafd-ifx-none-elf"]
+rustflags = [
+    "-C",
+    "link-args=-Map=app.map",
+    "-C",
+    "link-args=-Tdevice.x",
+    "-C",
+    "link-arg=-Tdefmt.x",
+]

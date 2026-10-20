@@ -1,0 +1,17 @@
+[book]
+title = "Compiling WebAssembly on a RISC-V Automotive Microcontroller"
+authors = ["Etienne Massart"]
+description = "Master's Thesis in Informatics, Technische Universitaet Muenchen"
+language = "en"
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-icon = "fa-github"
+mathjax-support = true
+no-section-label = true

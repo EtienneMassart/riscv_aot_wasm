@@ -1,0 +1,10 @@
+target/
+trace.log
+/table_dir
+debug.txt
+/c_benchmark/benchmark/*.o
+tests_generator/target/
+generated_tests/
+/.vscode
+app.map
+docs/book/

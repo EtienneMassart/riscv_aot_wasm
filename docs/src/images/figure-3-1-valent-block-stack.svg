@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320">
+  <rect width="960" height="320" fill="white"/>
+  <style>
+    .panel { fill: #ffffff; stroke: #444; stroke-width: 2; }
+    .node { fill: #ffffff; stroke: #333; stroke-width: 2; }
+    .root { fill: #e8e8e8; }
+    .leaf { fill: #ffffff; }
+    .label { font-family: Times New Roman, serif; font-size: 18px; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+    .paneltitle { font-family: Times New Roman, serif; font-size: 15px; fill: #111; text-anchor: middle; }
+    .edge { stroke: #666; stroke-width: 2; fill: none; }
+  </style>
+
+  <rect class="panel" x="30" y="30" width="280" height="220" rx="2"/>
+  <text class="paneltitle" x="170" y="22">After i32.add</text>
+  <rect class="node root" x="112" y="48" width="116" height="40"/>
+  <text class="label" x="170" y="68">i32.add</text>
+  <line class="edge" x1="170" y1="88" x2="128" y2="130"/>
+  <line class="edge" x1="170" y1="88" x2="212" y2="130"/>
+  <rect class="node leaf" x="92" y="130" width="72" height="34"/>
+  <text class="label" x="128" y="147">$a</text>
+  <rect class="node leaf" x="176" y="130" width="72" height="34"/>
+  <text class="label" x="212" y="147">$b</text>
+
+  <rect class="panel" x="340" y="30" width="280" height="220" rx="2"/>
+  <text class="paneltitle" x="480" y="22">After i32.sub: two valent-blocks</text>
+  <rect class="node root" x="372" y="48" width="96" height="36"/>
+  <text class="label" x="420" y="66">i32.add</text>
+  <line class="edge" x1="420" y1="84" x2="394" y2="128"/>
+  <line class="edge" x1="420" y1="84" x2="446" y2="128"/>
+  <rect class="node leaf" x="356" y="128" width="68" height="32"/>
+  <text class="label" x="390" y="144">$a</text>
+  <rect class="node leaf" x="424" y="128" width="68" height="32"/>
+  <text class="label" x="458" y="144">$b</text>
+  <rect class="node root" x="492" y="48" width="96" height="36"/>
+  <text class="label" x="540" y="66">i32.sub</text>
+  <line class="edge" x1="540" y1="84" x2="514" y2="128"/>
+  <line class="edge" x1="540" y1="84" x2="566" y2="128"/>
+  <rect class="node leaf" x="476" y="128" width="68" height="32"/>
+  <text class="label" x="510" y="144">$a</text>
+  <rect class="node leaf" x="544" y="128" width="68" height="32"/>
+  <text class="label" x="578" y="144">$b</text>
+
+  <rect class="panel" x="650" y="30" width="280" height="220" rx="2"/>
+  <text class="paneltitle" x="790" y="22">After i32.mul: combined</text>
+  <rect class="node root" x="732" y="48" width="116" height="36"/>
+  <text class="label" x="790" y="66">i32.mul</text>
+  <line class="edge" x1="790" y1="84" x2="748" y2="128"/>
+  <line class="edge" x1="790" y1="84" x2="832" y2="128"/>
+  <rect class="node root" x="686" y="128" width="96" height="34"/>
+  <text class="label" x="734" y="145">i32.add</text>
+  <line class="edge" x1="734" y1="162" x2="708" y2="204"/>
+  <line class="edge" x1="734" y1="162" x2="760" y2="204"/>
+  <rect class="node leaf" x="670" y="204" width="68" height="28"/>
+  <text class="label" x="704" y="218">$a</text>
+  <rect class="node leaf" x="738" y="204" width="68" height="28"/>
+  <text class="label" x="772" y="218">$b</text>
+  <rect class="node root" x="796" y="128" width="96" height="34"/>
+  <text class="label" x="844" y="145">i32.sub</text>
+  <line class="edge" x1="844" y1="162" x2="818" y2="204"/>
+  <line class="edge" x1="844" y1="162" x2="870" y2="204"/>
+  <rect class="node leaf" x="780" y="204" width="68" height="28"/>
+  <text class="label" x="814" y="218">$a</text>
+  <rect class="node leaf" x="848" y="204" width="68" height="28"/>
+  <text class="label" x="882" y="218">$b</text>
+</svg>
